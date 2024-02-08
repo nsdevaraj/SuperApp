@@ -1,7 +1,6 @@
-# WebViewConsole
-WebViewConsole is an In-App debug console for your UIWebView
-
-<img src="https://github.com/LarryPage/WebViewConsole/blob/master/snapshot0.png" alt="snapshot0.png" width="400"/>
+# SuperApp
+SuperApp is an In-App debug console for your UIWebView
+ 
 
 <img src="https://github.com/LarryPage/WebViewConsole/blob/master/snapshot1.png" alt="snapshot1.png" width="400"/>
 
@@ -10,12 +9,12 @@ WebViewConsole is an In-App debug console for your UIWebView
 常用三种：<br>
 1.safari+simulator<br>
 2.safari+真机+dev证书<br>
-3.WebViewConsole<br>
+3.SuperApp<br>
 可调用HyBird,Scheme,js<br>
 
 
 ## License
 
-WebViewConsole is released under the MIT license. See LICENSE for details.
+SuperApp is released under the MIT license. See LICENSE for details.
 
 

@@ -4,8 +4,8 @@
 //
 //  Created by LiXiangCheng on 2/13/15.
 //
-//  Created by LiXiangCheng on 16/9/25.
-//  Copyright © 2016年 LiXiangCheng. All rights reserved.
+//  Created by LiXiangCheng on 9/2/24.
+//  Copyright © 2024 Devaraj. All rights reserved.
 //
 
 #import "WBUIWebView.h"
