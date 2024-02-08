@@ -22,8 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Browser";
+     
     
     self.webView = [[WBUIWebView alloc] initWithFrame:self.view.bounds];
     self.webView.JSBridge.interfaceName = @"UIWebViewBridge";
@@ -33,7 +32,7 @@
     
     [self.view addSubview:self.webView];
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.ffan.com"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.supermathsapp.com"]]];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Console" style:UIBarButtonItemStylePlain target:self action:@selector(showConsole:)];
 }

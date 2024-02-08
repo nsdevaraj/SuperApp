@@ -325,6 +325,7 @@
 				TargetAttributes = {
 					EFB77DE21D97661D0034808A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GYB67KYAAB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -334,6 +335,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -504,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GYB67KYAAB;
 				INFOPLIST_FILE = WebViewConsole/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.WebViewConsole;
@@ -515,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GYB67KYAAB;
 				INFOPLIST_FILE = WebViewConsole/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.WebViewConsole;
@@ -541,6 +545,7 @@
 				EFB77DFC1D97661D0034808A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
