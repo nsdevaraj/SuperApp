@@ -508,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GYB67KYAAB;
 				INFOPLIST_FILE = WebViewConsole/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.WebViewConsole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GYB67KYAAB;
 				INFOPLIST_FILE = WebViewConsole/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.WebViewConsole;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,20 +22,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     
-    
+      
     self.webView = [[WBUIWebView alloc] initWithFrame:self.view.bounds];
     self.webView.JSBridge.interfaceName = @"UIWebViewBridge";
     self.webView.JSBridge.readyEventName = @"UIWebViewBridgeReady";
     self.webView.JSBridge.invokeScheme = @"uiwebview-bridge://invoke";
     self.webView.wb_delegate = self;
     
+    [self.navigationController.view setBackgroundColor:(UIColor.clearColor)];
+    [self.navigationController.navigationBar setBackgroundColor:(UIColor.clearColor)];
+    
+    [self.navigationController.navigationBar setShadowImage:(UIImage.new)];
+    
+     
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    
+    [self.navigationController.navigationBar isTranslucent]; 
+
     [self.view addSubview:self.webView];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.supermathsapp.com"]]];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Console" style:UIBarButtonItemStylePlain target:self action:@selector(showConsole:)];
 }
+ 
 
 - (void)viewDidAppear:(BOOL)animated
 {
