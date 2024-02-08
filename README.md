@@ -4,14 +4,18 @@ SuperApp is an In-App debug console for your UIWebView
 
 <img src="https://github.com/LarryPage/WebViewConsole/blob/master/snapshot1.png" alt="snapshot1.png" width="400"/>
 
-网页Uiwebview可调试化控制台为网页调试问题提供强有力的工具<br>
+SuperApp, The debuggable console provides a powerful tool for debugging web page problems.<br>
 <br>
-常用三种：<br>
-1.safari+simulator<br>
-2.safari+真机+dev证书<br>
-3.SuperApp<br>
-可调用HyBird,Scheme,js<br>
 
+Three kinds of regular use:
+
+1.safari+simulator
+
+2.safari+true machine+dev certificate
+
+3. SuperApp
+
+Can be called HyBird, Scheme, js
 
 ## License
 
