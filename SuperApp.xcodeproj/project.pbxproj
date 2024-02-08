@@ -41,7 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EFB77DE31D97661D0034808A /* WebViewConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB77DE31D97661D0034808A /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB77DE71D97661D0034808A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFB77DE91D97661D0034808A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFB77DEA1D97661D0034808A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		EFB77DDA1D97661D0034808A = {
 			isa = PBXGroup;
 			children = (
-				EFB77DE51D97661D0034808A /* WebViewConsole */,
+				EFB77DE51D97661D0034808A /* SuperApp */,
 				EFB77DE41D97661D0034808A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,12 +126,12 @@
 		EFB77DE41D97661D0034808A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFB77DE31D97661D0034808A /* WebViewConsole.app */,
+				EFB77DE31D97661D0034808A /* SuperApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFB77DE51D97661D0034808A /* WebViewConsole */ = {
+		EFB77DE51D97661D0034808A /* SuperApp */ = {
 			isa = PBXGroup;
 			children = (
 				EFB77DFD1D9767080034808A /* WBWebViewConsole */,
@@ -144,7 +144,7 @@
 				EFB77E6A1D97A9330034808A /* LaunchScreen.xib */,
 				EFB77DE61D97661D0034808A /* Supporting Files */,
 			);
-			path = WebViewConsole;
+			path = SuperApp;
 			sourceTree = "<group>";
 		};
 		EFB77DE61D97661D0034808A /* Supporting Files */ = {
@@ -297,9 +297,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EFB77DE21D97661D0034808A /* WebViewConsole */ = {
+		EFB77DE21D97661D0034808A /* SuperApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFB77DFA1D97661D0034808A /* Build configuration list for PBXNativeTarget "WebViewConsole" */;
+			buildConfigurationList = EFB77DFA1D97661D0034808A /* Build configuration list for PBXNativeTarget "SuperApp" */;
 			buildPhases = (
 				EFB77DDF1D97661D0034808A /* Sources */,
 				EFB77DE01D97661D0034808A /* Frameworks */,
@@ -309,9 +309,9 @@
 			);
 			dependencies = (
 			);
-			name = WebViewConsole;
-			productName = WebViewConsole;
-			productReference = EFB77DE31D97661D0034808A /* WebViewConsole.app */;
+			name = SuperApp;
+			productName = SuperApp;
+			productReference = EFB77DE31D97661D0034808A /* SuperApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +330,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EFB77DDE1D97661D0034808A /* Build configuration list for PBXProject "WebViewConsole" */;
+			buildConfigurationList = EFB77DDE1D97661D0034808A /* Build configuration list for PBXProject "SuperApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -344,7 +344,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFB77DE21D97661D0034808A /* WebViewConsole */,
+				EFB77DE21D97661D0034808A /* SuperApp */,
 			);
 		};
 /* End PBXProject section */
@@ -507,10 +507,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GYB67KYAAB;
-				INFOPLIST_FILE = WebViewConsole/Info.plist;
+				INFOPLIST_FILE = SuperApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.WebViewConsole;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.SuperApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -520,10 +520,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GYB67KYAAB;
-				INFOPLIST_FILE = WebViewConsole/Info.plist;
+				INFOPLIST_FILE = SuperApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.WebViewConsole;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanda.SuperApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -531,7 +531,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFB77DDE1D97661D0034808A /* Build configuration list for PBXProject "WebViewConsole" */ = {
+		EFB77DDE1D97661D0034808A /* Build configuration list for PBXProject "SuperApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFB77DF81D97661D0034808A /* Debug */,
@@ -540,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFB77DFA1D97661D0034808A /* Build configuration list for PBXNativeTarget "WebViewConsole" */ = {
+		EFB77DFA1D97661D0034808A /* Build configuration list for PBXNativeTarget "SuperApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFB77DFB1D97661D0034808A /* Debug */,
