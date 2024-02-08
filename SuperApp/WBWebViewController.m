@@ -30,14 +30,10 @@
     self.webView.wb_delegate = self;
     
     [self.navigationController.view setBackgroundColor:(UIColor.clearColor)];
-    [self.navigationController.navigationBar setBackgroundColor:(UIColor.clearColor)];
-    
-    [self.navigationController.navigationBar setShadowImage:(UIImage.new)];
-    
-     
+    [self.navigationController.navigationBar setBackgroundColor:(UIColor.clearColor)]; 
+    [self.navigationController.navigationBar setShadowImage:(UIImage.new)];   
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    
+                                                forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar isTranslucent]; 
 
     [self.view addSubview:self.webView];
