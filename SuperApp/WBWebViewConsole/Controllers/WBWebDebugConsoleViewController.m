@@ -29,6 +29,7 @@
 @property (nonatomic, strong) WBWebViewConsole * console;
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) WBWebViewConsoleInputView * inputView;
+@property (nonatomic, strong) WBWebViewConsoleInputView * urlinputView;
 
 @end
 
@@ -50,9 +51,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.navigationItem.title = NSLocalizedString(@"Debug Console", nil);
-    
+     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameDidChangeNotification:) name:WBKeyboardObserverFrameDidUpdateNotification object:nil];
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
@@ -69,6 +68,11 @@
     [self.inputView setFont:[WBWebViewConsoleMessageCell messageFont]];
     [self.inputView setConsole:self.console];
     [self.view addSubview:self.inputView];
+    
+    self.urlinputView = [[WBWebViewConsoleInputView alloc] initWithFrame:CGRectZero];
+    [self.urlinputView setDelegate:self];
+    [self.urlinputView setFont:[WBWebViewConsoleMessageCell messageFont]];
+    [self.view addSubview:self.urlinputView];
     
     if (self.initialCommand.length)
     {
@@ -130,7 +134,7 @@
 {
     CGFloat keyboardHeight = [self keyboardHeight];
     CGFloat inputViewHeight = self.inputView.desiredHeight;
-    
+    CGFloat urlinputViewHeight = self.urlinputView.desiredHeight;
     if (animated)
     {
         WBKeyboardObserver * keyboard = [WBKeyboardObserver sharedObserver];
@@ -140,6 +144,7 @@
         [UIView setAnimationDuration:keyboard.animationDuration ? : 0.15];
     }
     
+    self.urlinputView.frame = CGRectMake(0, self.view.wbtHeight - inputViewHeight - urlinputViewHeight - keyboardHeight, self.view.wbtWidth, urlinputViewHeight);
     self.inputView.frame = CGRectMake(0, self.view.wbtHeight - inputViewHeight - keyboardHeight, self.view.wbtWidth, inputViewHeight);
     self.tableView.frame = CGRectMake(0, 0, self.view.wbtWidth, self.view.wbtHeight - inputViewHeight - keyboardHeight);
     
