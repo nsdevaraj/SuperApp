@@ -70,6 +70,7 @@
     [self.view addSubview:self.inputView];
     
     self.urlinputView = [[WBWebViewConsoleInputView alloc] initWithFrame:CGRectZero];
+    [self.urlinputView setText:@"https://www.google.com"];
     [self.urlinputView setDelegate:self];
     [self.urlinputView setFont:[WBWebViewConsoleMessageCell messageFont]];
     [self.view addSubview:self.urlinputView];
@@ -326,6 +327,7 @@
 - (void)urlconsoleInputView:(WBWebViewConsoleInputView *)urlinputView didCommitCommand:(NSString *)command
 {
     [self.tableView wbt_scrollToBottomAnimated:NO];
+    //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:command]]];
     NSLog(@"%@", command);
      
 }
