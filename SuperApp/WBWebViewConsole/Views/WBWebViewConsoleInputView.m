@@ -194,6 +194,10 @@ NSUInteger const WBWebViewConsoleInputMaxHistorySize = 30;
     {
         [_delegate consoleInputView:self didCommitCommand:command];
     }
+    if ([_delegate respondsToSelector:@selector(urlconsoleInputView:didCommitCommand:)])
+    {
+        [_delegate urlconsoleInputView:self didCommitCommand:command];
+    }
 }
 
 #pragma mark - TextView Delegate
@@ -204,6 +208,10 @@ NSUInteger const WBWebViewConsoleInputMaxHistorySize = 30;
     {
         [_delegate consoleInputViewHeightChanged:self];
     }
+    if ([_delegate respondsToSelector:@selector(urlconsoleInputViewHeightChanged:)])
+    {
+        [_delegate urlconsoleInputViewHeightChanged:self];
+    }
 }
 
 - (void)textViewDidBeginEditing:(UITextView *)textView
@@ -211,6 +219,11 @@ NSUInteger const WBWebViewConsoleInputMaxHistorySize = 30;
     if ([_delegate respondsToSelector:@selector(consoleInputViewDidBeginEditing:)])
     {
         [_delegate consoleInputViewDidBeginEditing:self];
+    }
+
+    if ([_delegate respondsToSelector:@selector(urlconsoleInputViewDidBeginEditing:)])
+    {
+        [_delegate urlconsoleInputViewDidBeginEditing:self];
     }
 }
 

@@ -78,7 +78,7 @@
     {
         [self.inputView setText:self.initialCommand];
         [self.inputView.textView becomeFirstResponder];
-    } 
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -289,6 +289,7 @@
 
 - (void)clearMessages
 {
+    NSLog(@"%@", @"command");
     [self.console clearMessages];
 }
 
@@ -325,6 +326,8 @@
 - (void)urlconsoleInputView:(WBWebViewConsoleInputView *)urlinputView didCommitCommand:(NSString *)command
 {
     [self.tableView wbt_scrollToBottomAnimated:NO];
+    NSLog(@"%@", command);
+     
 }
 
 
