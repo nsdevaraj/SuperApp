@@ -10,7 +10,7 @@
 //  This source code is licensed under the BSD-style license found in the
 //  LICENSE file in the root directory of this source tree.
 //
-
+#import "WBWebViewController.h"
 #import "WBWebDebugConsoleViewController.h"
 #import "WBWebViewConsole.h"
 #import "WBWebViewConsoleMessageCell.h"
@@ -327,6 +327,10 @@
 - (void)urlconsoleInputView:(WBWebViewConsoleInputView *)urlinputView didCommitCommand:(NSString *)command
 {
     [self.tableView wbt_scrollToBottomAnimated:NO];
+
+    WBWebViewController * webViewController = [[WBWebViewController alloc] init];
+    webViewController.urlString = command;
+    [self.navigationController pushViewController:webViewController animated:YES];
     //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:command]]];
     NSLog(@"%@", command);
      

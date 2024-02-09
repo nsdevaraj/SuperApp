@@ -28,7 +28,9 @@
     self.webView.JSBridge.readyEventName = @"UIWebViewBridgeReady";
     self.webView.JSBridge.invokeScheme = @"uiwebview-bridge://invoke";
     self.webView.wb_delegate = self;
-    self.urlString = @"https://www.supermathsapp.com";
+    if(self.urlString.length == 0){
+        self.urlString = @"https://www.supermathsapp.com";
+    }
     
     [self.navigationController.view setBackgroundColor:(UIColor.clearColor)];
     [self.navigationController.navigationBar setBackgroundColor:(UIColor.clearColor)]; 
