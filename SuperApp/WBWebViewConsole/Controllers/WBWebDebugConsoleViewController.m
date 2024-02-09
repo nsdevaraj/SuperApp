@@ -78,7 +78,7 @@
     {
         [self.inputView setText:self.initialCommand];
         [self.inputView.textView becomeFirstResponder];
-    }
+    } 
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -146,7 +146,7 @@
     
     self.urlinputView.frame = CGRectMake(0, self.view.wbtHeight - inputViewHeight - urlinputViewHeight - keyboardHeight, self.view.wbtWidth, urlinputViewHeight);
     self.inputView.frame = CGRectMake(0, self.view.wbtHeight - inputViewHeight - keyboardHeight, self.view.wbtWidth, inputViewHeight);
-    self.tableView.frame = CGRectMake(0, 0, self.view.wbtWidth, self.view.wbtHeight - inputViewHeight - keyboardHeight);
+    self.tableView.frame = CGRectMake(0, 0, self.view.wbtWidth, self.view.wbtHeight - inputViewHeight -urlinputViewHeight - keyboardHeight);
     
     if (animated)
     {
@@ -308,6 +308,25 @@
 {
     [self.tableView wbt_scrollToBottomAnimated:NO];
 }
+
+
+#pragma mark - urlInputView Delegate
+
+- (void)urlconsoleInputViewHeightChanged:(WBWebViewConsoleInputView *)urlinputView
+{
+    [self relayoutViewsAnimated:_flags.viewAppeared];
+}
+
+- (void)urlconsoleInputViewDidBeginEditing:(WBWebViewConsoleInputView *)urlinputView
+{
+    [self.tableView wbt_scrollToBottomAnimated:YES];
+}
+
+- (void)urlconsoleInputView:(WBWebViewConsoleInputView *)urlinputView didCommitCommand:(NSString *)command
+{
+    [self.tableView wbt_scrollToBottomAnimated:NO];
+}
+
 
 #pragma mark - Keyboard Notification
 

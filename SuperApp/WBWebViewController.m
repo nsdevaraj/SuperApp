@@ -14,6 +14,7 @@
 @interface WBWebViewController () <UIWebViewDelegate>
 
 @property (nonatomic, strong) WBUIWebView * webView;
+@property (nonatomic, strong) NSString *urlString;
 
 @end
 
@@ -28,6 +29,7 @@
     self.webView.JSBridge.readyEventName = @"UIWebViewBridgeReady";
     self.webView.JSBridge.invokeScheme = @"uiwebview-bridge://invoke";
     self.webView.wb_delegate = self;
+    self.urlString = @"https://www.supermathsapp.com";
     
     [self.navigationController.view setBackgroundColor:(UIColor.clearColor)];
     [self.navigationController.navigationBar setBackgroundColor:(UIColor.clearColor)]; 
@@ -38,7 +40,7 @@
 
     [self.view addSubview:self.webView];
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.supermathsapp.com"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Console" style:UIBarButtonItemStylePlain target:self action:@selector(showConsole:)];
 }

@@ -39,4 +39,8 @@
 - (void)consoleInputViewDidBeginEditing:(WBWebViewConsoleInputView *)inputView;
 - (void)consoleInputView:(WBWebViewConsoleInputView *)inputView didCommitCommand:(NSString *)command;
 
+
+- (void)urlconsoleInputViewHeightChanged:(WBWebViewConsoleInputView *)urlinputView;
+- (void)urlconsoleInputViewDidBeginEditing:(WBWebViewConsoleInputView *)urlinputView;
+- (void)urlconsoleInputView:(WBWebViewConsoleInputView *)urlinputView didCommitCommand:(NSString *)command;
 @end
