@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WBWebViewController : UIViewController
+@property (nonatomic, strong) NSString * urlString;
 
 @end

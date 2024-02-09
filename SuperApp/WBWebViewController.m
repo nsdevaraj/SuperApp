@@ -13,8 +13,7 @@
 
 @interface WBWebViewController () <UIWebViewDelegate>
 
-@property (nonatomic, strong) WBUIWebView * webView;
-@property (nonatomic, strong) NSString *urlString;
+@property (nonatomic, strong) WBUIWebView * webView; 
 
 @end
 
