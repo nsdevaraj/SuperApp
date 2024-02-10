@@ -29,7 +29,7 @@
     self.webView.JSBridge.invokeScheme = @"uiwebview-bridge://invoke";
     self.webView.wb_delegate = self;
     if(self.urlString.length == 0){
-        self.urlString = @"https://www.supermathsapp.com";
+        self.urlString = @"https://www.github.com";
     }
     
     [self.navigationController.view setBackgroundColor:(UIColor.clearColor)];
