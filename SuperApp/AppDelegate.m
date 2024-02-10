@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  SuperApp
 //
-//  Created by LiXiangCheng on 9/2/24.
+//  Created by Devaraj on 9/2/24.
 //  Copyright © 2024 Devaraj. All rights reserved.
 //
 
@@ -20,8 +20,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[WBWebViewController alloc] init]];
-    [self.window setRootViewController:navigationController];
+    //UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[WBWebViewController alloc] init]];
+    [self.window setRootViewController:[[WBWebViewController alloc] init]];
     
     [self.window makeKeyAndVisible];
     return YES;
